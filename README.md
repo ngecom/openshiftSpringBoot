@@ -20,7 +20,7 @@ Scope of the project is to deploy spring boot webapplication on Openshift and sc
     * git init
     * git pull https://github.com/ngecom/openshiftSpringBoot.git
     * mvn package
-    * java -jar halloworld.jar
+    * Verify locally by executing "java -jar helloopenshift.jar"
 
 # Login to openshift as developer and create a project in openshift
     * rakesh@rakesh-ThinkPad-P50:~/IDE/crc-linux-1.15.0-amd64$ oc login -u developer -p developer
