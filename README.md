@@ -74,5 +74,5 @@ With an odo create command, a configuration file called config.yaml has been cre
 # Access the application from outside world
   * http://helloopenshift-8080-app-my-project.apps-crc.testing
   * Scale and Test with some concurrent client requests
- <img src="https://github.com/ngecom/openshiftSpringBoot/blob/master/scale2.png"
+ <img src="https://github.com/ngecom/openshiftSpringBoot/blob/master/scale2.png">
      
