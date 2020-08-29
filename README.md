@@ -1,6 +1,6 @@
 # OpenShift SpringBoot Deploy on you Local PC Or Laptop
 
-Hello world Application to show how easy for a developer to deploy in OpenShift
+How easy for a developer to deploy Spring Boot application in Open Shift
 
 odo is a CLI tool for easily developing and deploying applications on OpenShift. Similar to oc - the OpenShift CLI, which is more operations-focused 
 and need solid understanding of Kubernetes concepts. odo is designed to be simple and concise so you can focus on coding. odo's syntax and design are centered 
