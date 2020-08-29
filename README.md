@@ -26,10 +26,32 @@ Scope of the project is to deploy spring boot webapplication on Openshift and sc
     * rakesh@rakesh-ThinkPad-P50:~/IDE/crc-linux-1.15.0-amd64$ oc login -u developer -p developer
     * rakesh@rakesh-ThinkPad-P50:~/IDE/crc-linux-1.15.0-amd64$ oc new-project my-project --display-name="HelloWorld"
   
-# Building Spring Boot Web application    
+# Create Spring Boot Web component in Openshift
+
     * rakesh@rakesh-ThinkPad-P50:~/MyWorks/Openshift/helloopenshift$ odo create java helloopenshift --binary=target/helloopenshift.jar
     * rakesh@rakesh-ThinkPad-P50:~/MyWorks/Openshift/helloopenshift$ odo push
+ 
+With an odo create command, a configuration file called config.yaml has been created in the local directory of the component that contains information about the component for deployment. You can view the configuration settings of the component in config.yaml by the following command:
 
+     rakesh@rakesh-ThinkPad-P50:~/MyWorks/Openshift/helloopenshift$ odo config view
+     COMPONENT SETTINGS
+     ------------------------------------------------
+     PARAMETER         CURRENT_VALUE
+     Type              java
+     Application       app
+     Project           my-project
+     SourceType        binary
+     Ref               
+     SourceLocation    target/helloopenshift.jar
+     Ports             8080/TCP,8443/TCP,8778/TCP
+     Name              helloopenshift
+     MinMemory         
+     MaxMemory         
+     DebugPort         
+     Ignore            
+     MinCPU            
+     MaxCPU 
+     
 # Expose the Web application to Public
     * rakesh@rakesh-ThinkPad-P50:~/MyWorks/Openshift/helloopenshift$ odo url create --port 8080
     * rakesh@rakesh-ThinkPad-P50:~/MyWorks/Openshift/helloopenshift$ odo push
@@ -52,5 +74,5 @@ Scope of the project is to deploy spring boot webapplication on Openshift and sc
 # Access the application from outside world
   * http://helloopenshift-8080-app-my-project.apps-crc.testing
   * Scale and Test with some concurrent client requests
- <img src="
+ <img src="https://github.com/ngecom/openshiftSpringBoot/blob/master/scale2.png"
      
